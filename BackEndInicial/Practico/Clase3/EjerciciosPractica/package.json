@@ -1,0 +1,19 @@
+{
+  "name": "clase3express",
+  "version": "1.0.0",
+  "description": "ejercicios de practica de la clase3 npm y express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "npm",
+    "express",
+    "clase3"
+  ],
+  "author": "Martin Cabrera",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

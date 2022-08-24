@@ -11,7 +11,11 @@
 
 // const persona = new Persona("Maria", "Lopez", 45);
 
-const persona = { fistname: "Maria", lastname: "Lopez", age: 45 };
+const persona = {
+    fistname: "Maria",
+    lastname: "Lopez",
+    age: 45
+};
 
 module.exports = persona;
 

@@ -3,7 +3,8 @@ const persona = require("./persona");
 
 const server = http.createServer((req, res) => {
     res.setHeader('Content-Type', 'application/json');
-    res.end(JSON.stringify(persona));
+    const json = (JSON.stringify(persona));
+    res.end(json);
 
 
 });

@@ -24,7 +24,7 @@ const home = (req, res) => {
 
 const products = (req, res) => {
     const lista = ["Notebook", "iPad", "Kindle", "Monitor", "Xbox series s"];
-    res.render("productos.njk", { lista: lista });
+    res.render("productos.njk", { lista }); //Si se 'llaman' igual puedo poner solo lista
 }
 const about = (req, res) => {
     res.send("about");

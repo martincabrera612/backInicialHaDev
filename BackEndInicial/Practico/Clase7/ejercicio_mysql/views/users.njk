@@ -11,7 +11,38 @@
 </head>
 
 <body>
-    <div class="container" style="max-width: 500px">
+  <div class="container" style="max-width:1000px">
+    <div class="row">
+     <div class="col-6" > 
+       <label for"tabla"><h1> Listado de Usuarios </h1></label>
+       <div class="border shadow rounded p-3 mt-5" id="tabla">
+        
+
+        <table class="table table-striped">
+    <thead>
+        <tr>
+        <th scope="col">id</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido</th>
+        <th scope="col">Edad</th>
+        <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+        <td> <button class="btn btn-danger btn-sm"> Eliminar </button> </td>
+        </tr>
+        
+    </tbody>
+    </table>
+    </div>
+</div>
+
+    <div class="col-6" >
         {# CREAR USUARIO#}
       <h1 class="my-3">Crear nuevo usuario</h1>
 
@@ -20,37 +51,37 @@
         <form action="/usuarios" method="POST">
           <div class="mb-3">
             {# Nombre #}
-            <label for="nombre" class="form-label"
+            <label for="firstname" class="form-label"
               >Nombre</label
             >
             <input
               type="text"
-              name="nombre"
-              id="nombre"
+              name="firstname"
+              id="firstname"
               class="form-control"
               placeholder="Ingresar nombre..."
             />
 
             {# Apellido #}
-             <label for="apellido" class="form-label"
+             <label for="lastname" class="form-label"
               >Apellido</label
             >
             <input
               type="text"
-              name="apellido"
-              id="apellido"
+              name="lastname"
+              id="lastname"
               class="form-control"
               placeholder="Ingresar apellido..."
             />
 
             {# Edad #}
-             <label for="edad" class="form-label"
+             <label for="age" class="form-label"
               >Edad</label
             >
             <input
               type="text"
-              name="edad"
-              id="edad"
+              name="age"
+              id="age"
               class="form-control"
               placeholder="Ingresar edad..."
             />
@@ -58,7 +89,7 @@
           <button class="btn btn-success" type="submit">Guardar</button>
         </form>
       </div>
-    </div>
+    
 
         {# MODIFICAR USUARIO#}
 
@@ -80,37 +111,37 @@
               placeholder="Ingresar id..."
             />
             {# Nombre #}
-            <label for="nombre" class="form-label"
+            <label for="name" class="form-label"
               >Nombre</label
             >
             <input
               type="text"
-              name="nombre"
-              id="nombre"
+              name="name"
+              id="name"
               class="form-control"
               placeholder="Ingresar nombre..."
             />
 
             {# Apellido #}
-             <label for="apellido" class="form-label"
+             <label for="lastname" class="form-label"
               >Apellido</label
             >
             <input
               type="text"
-              name="apellido"
-              id="apellido"
+              name="lastname"
+              id="lastname"
               class="form-control"
               placeholder="Ingresar apellido..."
             />
 
             {# Edad #}
-             <label for="edad" class="form-label"
+             <label for="age" class="form-label"
               >Edad</label
             >
             <input
               type="text"
-              name="edad"
-              id="edad"
+              name="age"
+              id="age"
               class="form-control"
               placeholder="Ingresar edad..."
             />
@@ -118,7 +149,10 @@
           <button class="btn btn-success" type="submit">Modificar</button>
         </form>
       </div>
+      </div>
+    </div>
 
+</div>
 
 
 

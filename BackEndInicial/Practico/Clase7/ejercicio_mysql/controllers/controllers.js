@@ -3,9 +3,7 @@ const home = (req, res) => {
 
 };
 
-const getUsuarios = (req, res) => {
-    res.render("crearUsuario", { root: "./views" });;
-};
+
 
 
 const postUsuarios = (req, res) => {
@@ -13,12 +11,12 @@ const postUsuarios = (req, res) => {
 };
 
 
-const eliminar = (req, res) => {
+const destroy = (req, res) => {
     res.send("Eliminar");
 };
 
 
-const modificar = (req, res) => {
+const update = (req, res) => {
     res.send("modificar");
 };
 

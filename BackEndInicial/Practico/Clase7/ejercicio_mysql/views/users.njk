@@ -29,14 +29,15 @@
         </tr>
     </thead>
     <tbody>
+      {%for user in users %}
         <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-        <td> <button class="btn btn-danger btn-sm"> Eliminar </button> </td>
+        <td>{{user.id}}</td>
+        <td>{{user.firstname}}</td>
+        <td>{{user.lastname}}</td>
+        <td>{{user.age}}</td>
+        <td> <a href="/usuarios/eliminar/{{user.id}}" class="btn btn-sm btn-danger"> Eliminar </a> </td>
         </tr>
-        
+        {% endfor %}
     </tbody>
     </table>
     </div>
@@ -100,24 +101,24 @@
           <div class="mb-3">
 
                {# id #}
-            <label for="idUsuario" class="form-label"
+            <label for="id" class="form-label"
               >Id</label
             >
             <input
               type="text"
-              name="idUsuario"
-              id="idUsuario"
+              name="id"
+              id="id"
               class="form-control"
               placeholder="Ingresar id..."
             />
             {# Nombre #}
-            <label for="name" class="form-label"
+            <label for="firstname" class="form-label"
               >Nombre</label
             >
             <input
               type="text"
-              name="name"
-              id="name"
+              name="firstname"
+              id="firstname"
               class="form-control"
               placeholder="Ingresar nombre..."
             />

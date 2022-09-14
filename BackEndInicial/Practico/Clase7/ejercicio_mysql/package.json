@@ -1,7 +1,6 @@
 {
   "name": "ejercicio_mysql",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,6 +12,8 @@
     "dotenv": "^16.0.2",
     "express": "^4.18.1",
     "mysql2": "^2.3.3",
-    "nunjucks": "^3.2.3"
-  }
+    "nunjucks": "^3.2.3",
+    "sequelize": "^6.21.6"
+  },
+  "description": ""
 }

@@ -11,7 +11,6 @@ const sequelize = new Sequelize(
 );
 
 class User extends Model {}
-
 User.init({
     fullname: DataTypes.STRING,
     birthday: {

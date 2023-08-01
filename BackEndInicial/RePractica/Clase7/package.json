@@ -1,0 +1,20 @@
+{
+  "name": "clase8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -e njk,js index.js"
+  },
+  "keywords": [],
+  "author": "Martin Cabrera",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "mysql2": "^3.3.5",
+    "nodemon": "^2.0.22",
+    "nunjucks": "^3.2.4"
+  }
+}
